@@ -69,7 +69,7 @@ $(".restart").click(function () {
     started = false;
     currentMoves = 0;
     $(".current-moves").text("Current Moves: " + currentMoves);
-    if(bestMoves!=9999) $(".best-moves").text("Current Moves: " + bestMoves);
+    if(bestMoves!=9999) $(".best-moves").text("Best Moves: " + bestMoves);
     for(let i=1;i<13;i++){
         $("#"+arr[i]).attr("src","/images/pick-me.jpg");
     }
