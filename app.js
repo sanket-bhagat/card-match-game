@@ -29,7 +29,7 @@ $(".pick-me").click(function () {
     if (!completed.includes(index) && !active.includes(index)) {
 
         active.push(index);
-        $(this).attr("src", "/images/" + nums[index] + ".png");
+        $(this).attr("src", "images/" + nums[index] + ".png");
         setTimeout(function () {
             console.log("hello");
         }, 1000);
@@ -38,14 +38,14 @@ $(".pick-me").click(function () {
         if (selectedSecond >= 0) {
             setTimeout(function () {
                 if (nums[selectedSecond] == nums[selectedFirst]) {
-                    $("#" + arr[selectedSecond + 1]).attr("src", "/images/done.jpg");
-                    $("#" + arr[selectedFirst + 1]).attr("src", "/images/done.jpg");
+                    $("#" + arr[selectedSecond + 1]).attr("src", "images/done.jpg");
+                    $("#" + arr[selectedFirst + 1]).attr("src", "images/done.jpg");
                     completed.push(selectedSecond);
                     completed.push(selectedFirst);
                     playSong("correct");
                 } else {
-                    $("#" + arr[selectedSecond + 1]).attr("src", "/images/pick-me.jpg");
-                    $("#" + arr[selectedFirst + 1]).attr("src", "/images/pick-me.jpg");
+                    $("#" + arr[selectedSecond + 1]).attr("src", "images/pick-me.jpg");
+                    $("#" + arr[selectedFirst + 1]).attr("src", "images/pick-me.jpg");
                     playSong("wrong");
                 }
                 active = [];
@@ -71,11 +71,11 @@ $(".restart").click(function () {
     $(".current-moves").text("Current Moves: " + currentMoves);
     if(bestMoves!=9999) $(".best-moves").text("Best Moves: " + bestMoves);
     for(let i=1;i<13;i++){
-        $("#"+arr[i]).attr("src","/images/pick-me.jpg");
+        $("#"+arr[i]).attr("src","images/pick-me.jpg");
     }
 });
 
 function playSong(audio) {
-    const song = new Audio("/music/" + audio + ".mp3");
+    const song = new Audio("music/" + audio + ".mp3");
     song.play();
 }
