@@ -1,0 +1,27 @@
+body{
+    background-color: white;
+}
+
+img{
+    height: 100px;
+}
+
+.heading{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scores{
+    font-size: 1.5rem;
+    font-weight: 800;
+    border: 2px solid rgb(167, 21, 21);
+    color: rgb(167, 21, 21);
+    padding-left: 10%;
+}
+
+.restart-btn{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}

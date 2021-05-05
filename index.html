@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Match</title>
+    <!-- Linking Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- linking bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- linking css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="heading display-4">MATCH THE CARDS!</h1>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col col-6 mb-5">
+          <p class="scores best-moves">Best Moves: None</p>
+        </div>
+        <div class="col col-6">
+          <p class="scores current-moves">Current Moves: 0</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="one" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="two" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="three" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="four" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="five" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="six" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="seven" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="eight" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="nine" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="ten" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="eleven" src="/images/pick-me.jpg" alt="" />
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5">
+          <img class="pick-me" id="twelve" src="/images/pick-me.jpg" alt="" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 mb-5 restart-btn"><button class="btn btn-danger restart">RESTART</button></div>
+      </div>
+    </div>
+    <footer><p>©️Sanket Bhagat(2021)</p></footer>
+
+
+    <!-- linking jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- linking javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
